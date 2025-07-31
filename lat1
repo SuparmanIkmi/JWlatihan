@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<style>
+    div{
+        background-color: blueviolet;
+    }
+    table, th, td {
+        border:1px solid black;
+    }
+</style>
+<html>
+    <head>
+        <title>Latihan Project</title>
+    </head>
+    
+    <body>
+        <div>
+        <h1>Nama</h1>
+        <h2><span style="background-color: yellowgreen;color:red;">kelas</span></h2>
+        <h2><div style="color:red;">Mapel</div></h2></div>
+        <br>
+        <p>BUATKAN TABEL NAMA TEMEN KALIAN VERSI SPAN 
+            MASING MASING TABEL 5 NAMA
+        </p>
+        <table style="width: 80%;">
+            <tr>
+               <th>Versi Span</th>
+            </tr>
+            <tr>
+                <th><span style="background-color: lightcoral;color:rgb(255, 255, 255)">Nama Lengkap</span></th>
+                <th>nama panggilan</th>
+                <th>kegiataan favotir</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+            </tr>
+            <tr>
+                <th>2.</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+            </tr>
+            <tr>
+                <th>4.</th>
+            </tr>
+            <tr>
+                <th>5.</th>
+            </tr>
+        </table>
+<br>
+        <p>BUATKAN TABEL NAMA TEMEN KALIAN VERSI DIV 
+            MASING MASING TABEL 5 NAMA
+        <table style="width: 80%;">
+            <tr>
+                <th>Versi Div</th>
+            </tr>
+            <tr>
+                <th><div style="background-color: lightcoral;color: white;">Nama Lengkap</div></th>
+                <th>nama panggilan</th>
+                <th>kegiataan favotir</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+            </tr>
+            <tr>
+                <th>2.</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+            </tr>
+            <tr>
+                <th>4.</th>
+            </tr>
+            <tr>
+                <th>5.</th>
+            </tr>
+    </body>
+
+</html>
