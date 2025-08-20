@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Richard Hanrick</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="avatar.png" alt="Avatar" class="avatar"/>
+        <h2>Richard hanrick</h2>
+        <span class="role">Web developer</span>
+      </div>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope">richard@example.com</i> richard@example.com</p>
+        <p><i class="fas fa-phone"></i> +1 (213) 352-2795</p>
+        <p><i class="fas fa-birthday-cake"></i> June 23, 1982</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sacramento, California, USA</p>
+        <div class="socials">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <nav class="navbar">
+        <ul>
+          <li class="active">About</li>
+          <li>Resume</li>
+          <li>Portfolio</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <section class="about-section">
+        <h1>About Me</h1>
+        <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
+        <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that it is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p>
+      </section>
+
+      <section class="services">
+        <h2>What I'm Doing</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Web Design</h3>
+            <p>The most modern and high-quality design made at a professional level.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>High-quality development of sites at the professional level.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile Apps</h3>
+            <p>Professional development of applications for iOS and Android.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Photography</h3>
+            <p>I make high-quality photos of any category at a professional level.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+
+style.css
+==
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #1c1c1c;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.profile h2 {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.role {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #facc15;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  color: #aaa;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #111;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.navbar .active {
+  color: #fff;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 4px;
+}
+
+.about-section h1 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.services h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background-color: #2a2a2a;
+}
+
+.card i {
+  font-size: 24px;
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+
+tautan
+==
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html" class="nav-link">About</a></li>
+    <li><a href="resume.html" class="nav-link">Resume</a></li>
+    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
